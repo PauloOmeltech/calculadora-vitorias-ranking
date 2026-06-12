@@ -1,4 +1,4 @@
-# Definição dos níveis
+# Função 01: Definição dos níveis
 
 def calcular_nivel(vitorias):
     if vitorias < 10:
@@ -15,4 +15,11 @@ def calcular_nivel(vitorias):
         return "Lendário"
     else:
         return "Imortal"
+
+# Função 02: Cálculo de vitórias ou derrotas e atribuição do nível
+def calcular_saldo_rankeadas(vitorias, derrotas):
+    saldo = vitorias - derrotas
+    nivel = calcular_nivel(vitorias)
+    return saldo, nivel
+
 
